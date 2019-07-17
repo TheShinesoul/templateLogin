@@ -1,0 +1,91 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar class="d-flex bd-highlight mb-3">
+  <img src="../assets/Agent_Login-LOG/Logo.svg" class="mr-auto p-2 bd-highlight imagenLogo" alt="">
+
+  <div class="btn-contact p-2 bd-highlight">
+    <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu" class="">
+      <button mat-menu-item>LOG IN</button>
+      <button mat-menu-item>NEW AGENCY</button>
+    </mat-menu> -->
+  </div>
+</mat-toolbar>
+
+<main class="background-img">
+  <mat-tab-group class="cardGroup">
+    <mat-tab label="LOG IN" class="login">
+      <p class="bienvenida">Welcome! <br><span class="mensajeBienvenida">Log in to access our bamba agent booking site:</span></p>
+      <form class="formLogin">
+          <mat-form-field class="userName">
+            <input matInput placeholder="Email / Username">
+          </mat-form-field>
+
+          <mat-form-field class="password">
+              <input matInput placeholder="Password">
+          </mat-form-field>
+      </form>
+      
+      <p class="contraseña"><a href="#">Forgot your password?</a> </p>
+
+      <button mat-button class="btnLogin">LOG IN</button>
+    </mat-tab>
+
+    <mat-tab label="NEW AGENCY" class="newagency">
+        <p class="bienvenida bienvenidaNew">Agency not registered?<br><span class="mensajeBienvenida">Set up your new agency now. </span></p>
+
+        <button mat-button class="btnLogin">REGISTER NEW AGENCY</button>
+    </mat-tab>
+  </mat-tab-group>
+</main>
+
+<div class="row footer">
+  <div class="col-md-3">
+    <p>SKYPE: @bambaexperience </p> 
+    <p>MEX: +52 55 4161 1721 </p> 
+    <p>USA: +1 888 544 4781 </p> 
+    <p>UK: +44 20 3936 5072 </p> 
+    <p>DE: +49 30 8967 79790</p> 
+  </div>
+  <div class="col-md-3">
+    <p>About Us</p>
+    <p>Why travel with bamba</p>
+    <p>Animal Welfare</p>
+    <p>Sustainable tourism</p>
+    <p>Partners & associations</p>
+  </div>
+  <div class="col-md-3">
+    <p>FAQ</p>
+    <p>Press Release</p>
+    <p>Travel Brochure</p>
+    <p>Happy Nomad Blog</p>
+    <p>Bamba for good</p>
+  </div>
+  <div class="col-md-3">      
+    <p>
+      <i class="fab fa-facebook-square icono face"></i>
+      <i class="fab fa-instagram icono insta"></i>
+      <i class="fab fa-whatsapp icono whats"></i>
+    </p>   
+    <p>Privacy Policy</p>
+    <p>Terms & Conditions</p>
+    <p>Site Map</p>
+  </div>
+  <div class="imagenFooterContent">
+      <img src="../assets/Agent_Login-LOG/Logo.svg" alt="logo" class="imagenFooter">
+  </div>
+  <div class="linea"></div>
+  <p class="copy">Copyright © 2019. All rights reserved.</p>
+
+</div>
+
+
+    
+   
+    
+    <mat-divider></mat-divider>
+    
+ 
+
+
+
+<router-outlet></router-outlet>
