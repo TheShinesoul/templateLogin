@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {UsuariosService} from './services/usuarios.service'
-import {User} from './models/usuarios'
+import { UsuariosService } from './services/usuarios.service'
+import { User } from './models/usuarios'
 
 @Component({
   selector: 'app-root',
@@ -8,25 +8,34 @@ import {User} from './models/usuarios'
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit{
-  usuarios:User[] = []
 
-  constructor (public userService : UsuariosService){
+
+export class AppComponent implements OnInit {
+  usuarios: User[] = []
+  usuario = ""
+  hide = false;
+  contraseña = ""
+
+  constructor(public userService: UsuariosService) {
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.userService.getUser()
       .subscribe(
         usuarios => {
-          console.log(usuarios)
+          // console.log(usuarios)
           this.usuarios = usuarios
 
         },
         err => console.log(err)
       )
-  }    
+  }
+
+  verificaDatos() {
+    // console.log(`${this.usuario}`)
+  }
 }
-  
+
 
 

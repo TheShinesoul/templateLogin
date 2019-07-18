@@ -14,37 +14,45 @@
 <main class="background-img">
   <mat-tab-group class="cardGroup">
     <mat-tab label="LOG IN" class="login">
-      <p class="bienvenida">Welcome! <br><span class="mensajeBienvenida">Log in to access our bamba agent booking site:</span></p>
-      <form class="formLogin">
-          <mat-form-field class="userName">
-            <input matInput placeholder="Email / Username">
-          </mat-form-field>
+      <p class="bienvenida">Welcome! <br><span class="mensajeBienvenida">Log in to access our bamba agent booking
+          site:</span></p>
 
-          <mat-form-field class="password">
-              <input matInput placeholder="Password">
-          </mat-form-field>
-      </form>
-      
+      <mat-form-field class="userName" appearance="outline">
+        <mat-label>User / Email</mat-label>
+        <input matInput type="string">
+      </mat-form-field>
+
+      <mat-form-field class="password" appearance="outline" floatLabel="auto" hideRequiredMarked>
+        <mat-label>Password</mat-label>
+        <input matInput type="string" placeholder="Enter your password" [type]="!hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+
       <p class="contraseña"><a href="#">Forgot your password?</a> </p>
 
-      <button mat-button class="btnLogin">LOG IN</button>
+      <button mat-button class="btnLogin" (click)="verificaDatos()">LOG IN</button>
     </mat-tab>
 
     <mat-tab label="NEW AGENCY" class="newagency">
-        <p class="bienvenida bienvenidaNew">Agency not registered?<br><span class="mensajeBienvenida">Set up your new agency now. </span></p>
+      <p class="bienvenida bienvenidaNew">Agency not registered?<br><span class="mensajeBienvenida">Set up your new
+          agency now. </span></p>
 
-        <button mat-button class="btnLogin">REGISTER NEW AGENCY</button>
+      <button mat-button class="btnLogin">REGISTER NEW AGENCY</button>
     </mat-tab>
   </mat-tab-group>
 </main>
 
 <div class="row footer">
   <div class="col-md-3">
-    <p>SKYPE: @bambaexperience </p> 
-    <p>MEX: +52 55 4161 1721 </p> 
-    <p>USA: +1 888 544 4781 </p> 
-    <p>UK: +44 20 3936 5072 </p> 
-    <p>DE: +49 30 8967 79790</p> 
+    <p>SKYPE: @bambaexperience </p>
+    <p>MEX: +52 55 4161 1721 </p>
+    <p>USA: +1 888 544 4781 </p>
+    <p>UK: +44 20 3936 5072 </p>
+    <p>DE: +49 30 8967 79790</p>
   </div>
   <div class="col-md-3">
     <p>About Us</p>
@@ -60,18 +68,18 @@
     <p>Happy Nomad Blog</p>
     <p>Bamba for good</p>
   </div>
-  <div class="col-md-3">      
+  <div class="col-md-3">
     <p>
       <i class="fab fa-facebook-square icono face"></i>
       <i class="fab fa-instagram icono insta"></i>
       <i class="fab fa-whatsapp icono whats"></i>
-    </p>   
+    </p>
     <p>Privacy Policy</p>
     <p>Terms & Conditions</p>
     <p>Site Map</p>
   </div>
   <div class="imagenFooterContent">
-      <img src="../assets/Agent_Login-LOG/Logo.svg" alt="logo" class="imagenFooter">
+    <img src="../assets/Agent_Login-LOG/Logo.svg" alt="logo" class="imagenFooter">
   </div>
   <div class="linea"></div>
   <p class="copy">Copyright © 2019. All rights reserved.</p>
@@ -79,12 +87,12 @@
 </div>
 
 
-    
-   
-    
-    <mat-divider></mat-divider>
-    
- 
+
+
+
+<mat-divider></mat-divider>
+
+
 
 
 
