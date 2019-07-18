@@ -1,14 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<mat-toolbar class="d-flex bd-highlight mb-3">
-  <img src="../assets/Agent_Login-LOG/Logo.svg" class="mr-auto p-2 bd-highlight imagenLogo" alt="">
-
-  <div class="btn-contact p-2 bd-highlight">
-    <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-toolbar class="headerNav">
+  <div class="row contentHeader">
+    <div class="col-sm-6 imagenContent">
+      <img src="../assets/Agent_Login-LOG/Logo.svg" class="imagenLogo" alt="">
+    </div>
+    <div class="col-sm-6 botonContacto">
+      <button mat-button [matMenuTriggerFor]="menu" class="botonContacto2"><span class="contacto">CONTACT
+          US</span><br><span class="numeroContacto">+1888-544-4781</span>
+      </button>
+      <mat-menu #menu="matMenu" class="cardContacto">
+        <p>+1 888-544-4781</p>
+        <hr>
+        <p>Contact US</p>
+      </mat-menu>
+    </div>
+  </div>
+  <!-- <div class="left">
+    
+  </div>
+  <br>
+  <div class="btn-contact p-2 bd-highlight right">
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
     <mat-menu #menu="matMenu" class="">
       <button mat-menu-item>LOG IN</button>
       <button mat-menu-item>NEW AGENCY</button>
-    </mat-menu> -->
-  </div>
+    </mat-menu>
+  </div> -->
 </mat-toolbar>
 
 <main class="background-img">

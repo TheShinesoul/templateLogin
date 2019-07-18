@@ -1,4 +1,85 @@
+.headerNav{
+    width: 100%;
+    height: auto;
+}
+/deep/ .mat-menu-panel.cardContacto{
+    /* background-color: #2FC1D1; */
+    width: 170px;
+    margin-top: 32px;
+    text-align: left;
+    padding-left: 21px;
+    padding-top: 10px;
+    line-height: 10px;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    color:#75787B;
+}
 
+
+.contacto{
+    font-family: 'Lato',sans-serif;
+    font-size: 12px;
+    font-weight: bold
+}
+.numeroContacto{
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.contentHeader{
+    width: 100%;
+}
+.botonContacto2{
+    width: 100%;
+    line-height: 18px;
+    text-align: center;
+    position: relative;
+    color:#75787B
+}
+
+.botonContacto{
+    text-align: right;
+}
+
+.mat-button.botonContacto2{
+    height: auto;
+    width: auto;
+}
+
+.botonContacto2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 7px solid black;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+@media only screen and (max-width: 540px){
+    .imagenLogo{
+        margin: 0!important;  
+        margin: 10px 5%!important;      
+    }
+    .imagenContent{
+        float:center!important;
+        padding: 10px 25%;  
+    }
+    .mat-button.botonContacto2{
+        float: left;
+        margin: 0;
+        margin: 10px 4% 5px 36%;
+    }
+
+    /deep/ .mat-menu-panel.cardContacto{
+        /* background-color: #2FC1D1; */
+        /* width: 170px; */
+        margin-top: 6px;
+    }
+}
 .background-img {
     background-image: url("../assets/Agent_Login-LOG/Slide@2x.png");
     background-repeat: no-repeat;
@@ -58,7 +139,7 @@ mat-card {
     background-color: transparent;
     width: 140px;
     height: 34px;
-    margin:34px 110px 32px 0px;
+    margin:34px 79px 32px 0px;
     
 }
 
